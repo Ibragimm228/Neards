@@ -74,8 +74,8 @@ export function Hero() {
 				<div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-full opacity-20"></div>
 				<div className="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-tr from-purple-100 to-pink-100 rounded-full opacity-15"></div>
 				
-				{/* Background image with optimized loading */}
-				<div className="absolute right-0 top-0 w-1/2 h-full">
+				{/* Background image with optimized loading - СКРЫТО НА МОБИЛЬНЫХ */}
+				<div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
 					<div
 						className={`absolute inset-0 bg-gradient-to-l from-transparent to-white transition-opacity duration-500 will-change-opacity ${
 							loaded ? 'opacity-90' : 'opacity-100'
@@ -190,8 +190,8 @@ export function Hero() {
 						</div>
 					</div>
 
-					{/* Visual Column - оптимизированы анимации */}
-					<div className="lg:col-span-5">
+					{/* Visual Column - оптимизированы анимации - СКРЫТО НА МОБИЛЬНЫХ */}
+					<div className="lg:col-span-5 hidden lg:block">
 						<div className="relative">
 							
 							{/* Main decorative card */}
